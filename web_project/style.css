@@ -1,0 +1,100 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: url('spon.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container Utama */
+.container {
+    background: rgba(37, 37, 37, 0.641);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #00ff3c4d;
+    backdrop-filter: blur(10px);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Judul */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Tombol */
+button {
+    background: #00c32e;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold; /* Membuat teks bold */
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto; /* Memberikan jarak dan membuat tombol di tengah */
+}
+
+button:hover {
+    background: #f50000;
+}
+
+/* Menambahkan jarak di bawah tombol */
+button + p {
+    margin-top: 15px; /* Memberikan jarak 1 baris */
+}
+
+/* Form Styling */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.red-line {
+    border: 1px solid red;
+    margin: 10px 0;
+}
+
+.warning {
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
